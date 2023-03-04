@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function FirstPost() {
-  const [result, setResult] = useState('')
+  const [result, setResult] = useState({name: "", age: 0})
   async function fetchInfo() {
     const url = `http://localhost:3000/api/hello`
     const response = await fetch(url);
