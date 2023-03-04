@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function FirstPost() {
   const [result, setResult] = useState({name: "", age: 0})
   async function fetchInfo() {
-    const url = `http://localhost:3000/api/hello`
+    const url = `../api/hello`
     const response = await fetch(url);
     const json = await response.json();
     setResult(json);
